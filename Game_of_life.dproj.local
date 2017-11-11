@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.579,C:\Users\tgonz\Dropbox\Projekte\Game Of Life\Game_of_life.dproj=C:\Users\tgonz\Dropbox\Projekte\Game Of Life\Project1.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.882,=C:\Users\tgonz\Dropbox\Projekte\Game Of Life\Unit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.086,C:\Users\tgonz\Documents\Embarcadero\Studio\Projekte\Project1.dproj=C:\Users\tgonz\Dropbox\Projekte\Game Of Life\Project1.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.150,C:\Users\tgonz\Documents\Embarcadero\Studio\Projekte\Unit1.dfm=C:\Users\tgonz\Dropbox\Projekte\Game Of Life\Main.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.052,=C:\Users\tgonz\Documents\Embarcadero\Studio\Projekte\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.289,=C:\Users\tgonz\Documents\Embarcadero\Studio\Projekte\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.150,C:\Users\tgonz\Documents\Embarcadero\Studio\Projekte\Unit1.pas=C:\Users\tgonz\Dropbox\Projekte\Game Of Life\Main.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.518,=C:\Users\tgonz\Documents\Embarcadero\Studio\Projekte\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.165,=C:\Users\tgonz\Documents\Embarcadero\Studio\Projekte\Unit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>

@@ -1,0 +1,63 @@
+unit Main;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.StdCtrls;
+
+type
+  TForm1 = class(TForm)
+    procedure FormShow(Sender: TObject);
+  private
+    { Private-Deklarationen }
+    procedure Create_Matrix();
+  public
+    { Public-Deklarationen }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm1.Create_Matrix();
+var
+  Panel : TPanel;
+  i, left, top, width, height, add_left, add_top : integer;
+begin
+  left := 5;
+  top := 5;
+  width := 10;
+  height := 10;
+
+  for i := 0 to 5000 do
+  begin
+    Panel := TPanel.Create(Self);
+    Panel.Parent := Self;
+    Panel.Left := left;
+    Panel.Top := top;
+    Panel.Width := width;
+    Panel.Height := height;
+    Panel.Name := 'Panel'+IntToStr(i);
+    Panel.Caption := '';
+
+    //Pos neu setzen
+    left := TPanel(FindComponent('Panel'+IntToStr(i))).left + 5 + width;
+    if not ((left) <= Form1.Width-(5+width)) then
+    begin
+      left := 5;
+      add_top := TPanel(FindComponent('Panel'+IntToStr(i))).top + 5 + height;
+      if (top + add_top) <= Form1.Height then
+        top := add_top;
+    end;
+  end;
+end;
+procedure TForm1.FormShow(Sender: TObject);
+begin
+  Create_Matrix();
+end;
+
+end.
